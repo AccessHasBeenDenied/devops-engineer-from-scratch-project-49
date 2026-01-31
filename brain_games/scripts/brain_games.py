@@ -1,5 +1,5 @@
 from brain_games.module import greet
-from brain_games.cli import *
+from brain_games.cli import welcome_user
 
 
 def main():
