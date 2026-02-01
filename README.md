@@ -4,4 +4,4 @@
 
 ### Demo brain-even
 
-![brain-even](./docs/demo/demo.gif)
+![brain-even](./docs/demo/demo-brain-even.gif)
