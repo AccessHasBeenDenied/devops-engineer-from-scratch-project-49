@@ -13,3 +13,7 @@
 ### Demo brain-gcd
 
 ![brain-gcd](./docs/demo/demo-brain-gcd.gif)
+
+### Demo brain-progression
+
+![brain-progression](./docs/demo/demo-brain-progression.gif)
