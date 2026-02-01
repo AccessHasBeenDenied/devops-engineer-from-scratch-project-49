@@ -5,3 +5,7 @@
 ### Demo brain-even
 
 ![brain-even](./docs/demo/demo-brain-even.gif)
+
+### Demo brain-calc
+
+![brain-calc](./docs/demo/demo-brain-calc.gif)
