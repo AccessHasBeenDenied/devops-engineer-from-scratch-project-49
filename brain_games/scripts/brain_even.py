@@ -1,12 +1,12 @@
-from brain_games.brain_even import brain_even
-from brain_games.cli import welcome_user
-from brain_games.module import greet
+from brain_games.games.brain_even import brain_even
+from brain_games.utils import run
 
 
 def main():
-    greet()
-    welcome_user()
-    brain_even()
+    run(
+        brain_even,
+        'Answer "yes" if the number is even, otherwise answer "no".'
+    )
 
 
 if __name__ == "__main__":
