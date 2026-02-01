@@ -17,6 +17,10 @@ def is_even(value):
     return not value % 2
 
 
+def arithmetic_progression_elem(start, index, step):
+    return start + index * step
+
+
 def get_gcd(a, b):
     while b != 0:
         a, b = b, a % b
