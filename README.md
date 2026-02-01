@@ -9,3 +9,7 @@
 ### Demo brain-calc
 
 ![brain-calc](./docs/demo/demo-brain-calc.gif)
+
+### Demo brain-gcd
+
+![brain-gcd](./docs/demo/demo-brain-gcd.gif)
