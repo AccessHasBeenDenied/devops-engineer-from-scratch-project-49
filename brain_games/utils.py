@@ -17,6 +17,12 @@ def is_even(value):
     return not value % 2
 
 
+def get_gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
 def print_success():
     print("Correct!")
 
