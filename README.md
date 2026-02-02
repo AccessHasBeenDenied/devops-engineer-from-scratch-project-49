@@ -17,3 +17,7 @@
 ### Demo brain-progression
 
 ![brain-progression](./docs/demo/demo-brain-progression.gif)
+
+### Demo brain-prime
+
+![brain-prime](./docs/demo/demo-brain-prime.gif)
