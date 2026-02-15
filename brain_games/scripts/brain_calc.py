@@ -3,10 +3,7 @@ from brain_games.utils import run
 
 
 def main():
-    run(
-        brain_calc,
-        'What is the result of the expression?'
-    )
+    run(brain_calc)
 
 
 if __name__ == "__main__":

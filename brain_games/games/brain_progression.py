@@ -1,10 +1,14 @@
 from random import randint
 
 from brain_games.config import progression_count
-from brain_games.utils import arithmetic_progression_elem
+
+
+def arithmetic_progression_elem(start, index, step):
+    return start + index * step
 
 
 def brain_progression():
+    rule = 'What number is missing in the progression?'
     start = randint(0, 10)
     step = randint(0, 10)
     hidden_item_number = randint(0, progression_count)
@@ -17,4 +21,4 @@ def brain_progression():
     correct_answer = arithmetic_progression_elem(
         start, hidden_item_number, step
     )
-    return question, str(correct_answer)
+    return rule, question, str(correct_answer)

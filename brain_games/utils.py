@@ -3,70 +3,30 @@ import prompt
 from brain_games import config
 
 
-def greet():
-    print('Welcome to the Brain Games!')
-
-
 def welcome_user():
     username = prompt.string("May I have your name? ")
     print(f"Hello, { username }!")
     return username
 
 
-def is_even(value):
-    return not value % 2
-
-
-def arithmetic_progression_elem(start, index, step):
-    return start + index * step
-
-
-def get_gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
-
-
-def is_prime(n):
-    if n <= 1:
-        return False
-    i = 2
-    while i * i <= n:
-        if n % i == 0:
-            return False
-        i += 1
-    return True
-
-
-def print_success():
-    print("Correct!")
-
-
-def print_failed(answer, correct_answer, username):
-    print(
-        f"'{ answer }' is wrong answer ;(." 
-        f"Correct answer was '{ correct_answer }'."
-    )
-    print(f"Let's try again, { username }!")
-
-
-def print_congrats(username):
-    print(f"Congratulations, { username }!")
-
-
-def run(game, rule):
-    greet()
+def run(game):
+    print('Welcome to the Brain Games!')
     username = welcome_user()
+    rule, _, _ = game()
     print(rule)
     while config.game_count:
-        question, correct_answer = game()
+        _, question, correct_answer = game()
         print(f"Question: { question }")
         answer = prompt.string("Answer: ")
         if answer == correct_answer:
-            print_success()
+            print("Correct!")
             config.game_count = config.game_count - 1
         else:
-            print_failed(answer, correct_answer, username)
+            print(
+                f"'{ answer }' is wrong answer ;(." 
+                f"Correct answer was '{ correct_answer }'."
+            )
+            print(f"Let's try again, { username }!")
             break
     else:
-        print_congrats(username)
+        print(f"Congratulations, { username }!")

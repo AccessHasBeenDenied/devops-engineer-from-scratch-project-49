@@ -3,10 +3,7 @@ from brain_games.utils import run
 
 
 def main():
-    run(
-        brain_gcd,
-        'Find the greatest common divisor of given numbers.'
-    )
+    run(brain_gcd)
 
 
 if __name__ == "__main__":
