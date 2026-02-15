@@ -3,6 +3,10 @@ import prompt
 from brain_games import config
 
 
+def greet():
+    print('Welcome to the Brain Games!')
+
+
 def welcome_user():
     username = prompt.string("May I have your name? ")
     print(f"Hello, { username }!")
@@ -10,7 +14,6 @@ def welcome_user():
 
 
 def run(game):
-    print('Welcome to the Brain Games!')
     username = welcome_user()
     rule, _, _ = game()
     print(rule)
