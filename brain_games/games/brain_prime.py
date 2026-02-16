@@ -1,5 +1,7 @@
 from random import randint
 
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def is_prime(n):
     if n <= 1:
@@ -13,7 +15,6 @@ def is_prime(n):
 
 
 def brain_prime():
-    rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     number = randint(0, 1000)
     correct_answer = 'yes' if is_prime(number) else 'no'
-    return rule, str(number), correct_answer
+    return str(number), correct_answer

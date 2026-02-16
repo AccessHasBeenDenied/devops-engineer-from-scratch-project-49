@@ -1,6 +1,6 @@
 import prompt
 
-from brain_games import config
+from brain_games import constants
 
 
 def greet():
@@ -13,17 +13,16 @@ def welcome_user():
     return username
 
 
-def run(game):
+def run(game, rule):
     username = welcome_user()
-    rule, _, _ = game()
     print(rule)
-    while config.game_count:
-        _, question, correct_answer = game()
+    while constants.GAME_COUNT:
+        question, correct_answer = game()
         print(f"Question: { question }")
         answer = prompt.string("Answer: ")
         if answer == correct_answer:
             print("Correct!")
-            config.game_count = config.game_count - 1
+            constants.GAME_COUNT = constants.GAME_COUNT - 1
         else:
             print(
                 f"'{ answer }' is wrong answer ;(." 

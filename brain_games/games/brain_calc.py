@@ -1,8 +1,9 @@
 from random import choice, randint
 
+RULE = 'What is the result of the expression?'
+
 
 def brain_calc():
-    rule = 'What is the result of the expression?'
     first_number = randint(0, 100)
     second_number = randint(0, 100)
     operation = choice(['+', '-', '*'])
@@ -15,4 +16,4 @@ def brain_calc():
         case '*':
             correct_answer = first_number * second_number
 
-    return rule, question, str(correct_answer)
+    return question, str(correct_answer)
