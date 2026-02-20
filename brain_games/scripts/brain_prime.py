@@ -1,9 +1,9 @@
 from brain_games.engine import run
-from brain_games.games.brain_prime import RULE, brain_prime
+from brain_games.games import brain_prime as module
 
 
 def main():
-    run(brain_prime, RULE)
+    run(module)
 
 
 if __name__ == "__main__":

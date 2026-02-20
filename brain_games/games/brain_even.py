@@ -7,7 +7,7 @@ def is_even(value):
     return not value % 2
 
 
-def brain_even():
+def game():
     number = randint(0, 100)
     correct_answer = 'yes' if is_even(number) else 'no'
     return str(number), correct_answer

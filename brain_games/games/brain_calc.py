@@ -3,7 +3,7 @@ from random import choice, randint
 RULE = 'What is the result of the expression?'
 
 
-def brain_calc():
+def game():
     first_number = randint(0, 100)
     second_number = randint(0, 100)
     operation = choice(['+', '-', '*'])

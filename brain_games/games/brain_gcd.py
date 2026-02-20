@@ -9,7 +9,7 @@ def get_gcd(a, b):
     return a
 
 
-def brain_gcd():
+def game():
     first_number = randint(0, 100)
     second_number = randint(0, 100)
     question = f"{ first_number } { second_number }"

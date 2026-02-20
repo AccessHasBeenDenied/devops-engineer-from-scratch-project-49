@@ -14,7 +14,7 @@ def is_prime(n):
     return True
 
 
-def brain_prime():
+def game():
     number = randint(0, 1000)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return str(number), correct_answer

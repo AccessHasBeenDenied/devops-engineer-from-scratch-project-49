@@ -1,10 +1,10 @@
 from brain_games.engine import run
-from brain_games.games.brain_calc import RULE, brain_calc
+from brain_games.games import brain_calc as module
 
 
 def main():
-    run(brain_calc, RULE)
+    
 
 
 if __name__ == "__main__":
-    main()
+    run(module)

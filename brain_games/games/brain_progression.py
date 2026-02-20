@@ -9,7 +9,7 @@ def arithmetic_progression_elem(start, index, step):
     return start + index * step
 
 
-def brain_progression():
+def game():
     start = randint(0, 10)
     step = randint(0, 10)
     hidden_item_number = randint(0, PROGRESSION_COUNT - 1)
